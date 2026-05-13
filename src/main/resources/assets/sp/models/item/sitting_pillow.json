@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sp:item/sitting_pillow",
+    "layer1": "sp:item/sitting_pillow_1"
+  }
+}

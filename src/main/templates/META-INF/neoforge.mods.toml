@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT license"
+
+[[mods]]
+modId = "sp"
+version = "${mod_version}"
+displayName = "Sitting Pillow"
+logoFile = "logo.png"
+logoBlur = false
+authors = "bigdious"
+description = '''Sit on my pillows.'''
+itemIcon = "sp:sitting_pillow"
+
+[[dependencies.sp]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.72,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sp]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
+
