@@ -83,6 +83,9 @@ public class SittingPillow extends Entity {
 				player.addItem(pillow);
 				player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS);
 			} else {
+				if (!this.getPassengers().isEmpty()) {
+					this.ejectPassengers();
+				}
 				player.startRiding(this);
 			}
 			this.gameEvent(GameEvent.ENTITY_INTERACT, player);
